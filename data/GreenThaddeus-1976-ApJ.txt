@@ -1,0 +1,3038 @@
+197 6ApJ. . .205. .7 6 6G
+
+The Astrophysical Journal, 205 :766-785, 1976 May 1
+© 1976. The American Astronomical Society. All rights reserved. Printed in U.S.A.
+
+ROTATIONAL EXCITATION OF CO BY COLLISIONS WITH He, H, AND H2
+UNDER CONDITIONS IN INTERSTELLAR CLOUDS*
+Sheldon Green and Patrick Thaddeus
+Goddard Institute for Space Studies
+Received 1975 September 19
+ABSTRACT
+Cross sections for rotational excitation of small molecules by low-energy collisions with
+helium and hydrogen can currently be obtained via accurate numerical solution of the quantum
+equations that describe both intermolecular forces and collision dynamics. The relevant methods
+are discussed in some detail and applied to compute excitation rates for carbon monoxide. These
+calculations also predict collision-induced spectral pressure broadening constants which are in
+excellent agreement with available experimental data.
+Subject headings: interstellar: matter — interstellar: molecules — molecular processes
+I. INTRODUCTION
+It now appears that a significant fraction of galactic matter resides in “dense” interstellar molecular clouds, the
+presence of which had been previously overlooked because the dominant constituent, H2, is invisible in all spectral
+ranges accessible to earthbased observations. The trace constituents of these clouds, however, often have transitions
+at radio and microwave frequencies, and several dozen molecular species have now been discovered. One might
+hope to use observations of these to infer the conditions, such as kinetic temperatures and H2 densities, in these
+clouds. Indeed, this is a basic goal of current radiofrequency and microwave astronomy. As usual, interpretation
+of the astrophysical observations requires an understanding of the line formation, and this in turn depends on
+knowledge of the processes which populate the observed molecular levels.
+Under conditions in a typical cloud essentially all molecules are in their lowest electronic and vibrational state
+and only a handful of rotational levels are significantly populated. Furthermore, radiative and collisional transitions
+among rotational levels occur with comparable frequency, and, since these obey different “selection rules,” the
+levels are generally not in “local thermodynamic equilibrium” with either the radiation field or the ambient kinetic
+temperature. Thus different molecules, different isotopic variants of a molecule, and different transitions in a
+molecule generally display a variation in excitation temperature reflecting the competition between radiative and
+collisional processes. Whereas the radiative rates are generally well known, the relevant collision cross sections are
+not, and this has presented a serious obstacle to interpreting interstellar molecular spectra.
+In this paper we will discuss methods for obtaining information about the collision cross sections necessary to
+understand interstellar molecular clouds, and, as an example, we will apply them to carbon monoxide which is the
+most abundant of the observed species. A basic difficulty is that the astrophysical problems require cross sections
+between specific quantum levels, whereas experiments have so far been able to measure only averages over many
+transitions. Therefore we will use theoretical techniques. The theoretical approach is conveniently divided into two
+separate problems: obtaining the interaction potential between target and projectile and determining collision
+dynamics on this potential surface. By taking appropriate averages over the detailed cross sections obtained this
+way one can predict experimentally observable relaxation rates and this provides some check on the calculation.
+In § II we will outline the close-coupling scattering method which is essentially an exact numerical technique for
+solving the quantum scattering equations. In § III methods for obtaining intermolecular potentials will be discussed,
+and interactions for CO-H, CO-He, and CO-H2 will be described. Section IV gives the results of scattering calculations for these systems.
+II. COLLISION THEORY
+At the low kinetic velocities in interstellar clouds, the deBroglie wavelength of the projectile is comparable with
+the dimensions of the target so that a quantum treatment of collision dynamics is generally necessary. The most
+exact quantum approximation, valid at all energies, but computationally tractable only at very low energies, is the
+close coupling method (Arthurs and Dalgarno 1960). Close coupling is undoubtedly the best available technique
+for the very low kinetic temperatures in interstellar clouds where only a few quantum states are significantly
+populated.
+* Work supported in part by NASA grant NSG 7105.
+766
+
+© American Astronomical Society • Provided by the NASA Astrophysics Data System
+
+197 6ApJ. . .205. .7 6 6G
+
+ROTATIONAL EXCITATION OF CO
+
+767
+
+a) Close Coupling Method
+Consider two systems, A and B, which are separately described by (known) Schrôdinger equations,
+[HA{RA)-EjY¥A\RA)=Q,
+[Hb(Rb) - EB1W¿(RB) = 0 ,
+
+(2.1)
+
+where RA(RB) are internal coordinates and E/ (Ej) are allowed (i.e., stationary state) energies of A(B). Let A and
+B interact via a potential V(RA, RB, R) which depends on the collision coordinate R as well as on the internal
+coordinates of A and B and which becomes negligibly small at sufficiently large R ; the interaction potential will be
+discussed in greater detail in § III. The Schrôdinger equation for the combined system is then (in atomic units)
+[Ha(Ra) + Hb(Rb) + V(Ra, Rb, R) - l/(2p)VR2 - EY¥(Ra, RB9 R)=0,
+
+(2.2)
+
+where p is the reduced mass for the collision, E is the total energy, and we have transformed to center of mass
+coordinates.
+The total wavefunction T can be expanded exactly in any set of functions which is complete in the coordinates
+RA9 Rb, and Ä. For the internal coordinates, it is convenient to use Ty(/?¿) and xty(Z?fî) which are complete in RA
+and Rb by virtue of equation (2.1). For the interaction coordinate one can make the usual partial wave expansion,
+using Ylm(R) for the angular dependence, and (as yet unspecified) functions f(R) for the collision distance. Thus
+Rb, R)=2 rAXRA)YB%RB)Ylm(R)fljtrn(R) •
+ijlm
+
+(2.3)
+
+If this expansion is substituted into equation (2.2) one obtains coupled differential equations for the radial functions,
+[¿ 7& ~ ^3^
+
++ (E
+
+~
+
+= 2 Vyy,(R)fr(R),
+
+(2.4)
+
+where y denotes the quantum numbers—i9j9 /, and m—and E is the total energy. The coupling matrix elements are
+obtained by integrating the interaction potential over all coordinates except R:
+Vyy(R) = J dRAdRBdR'¥Ai'(RA)*'¥/(RB)* YVm(R)* x V(RA, RB, R)WA\RAy¥B%RB) Ylm(R).
+
+(2.5)
+
+The sum in equation (2.4) is over the (infinite) complete sets of quantum numbers y' =
+/', and m'. The close
+coupling method consists of truncating this sum to a finite set of “relevant” states of A and B. Often only those
+states which are asymptotically energetically accessible (open channels) are retained. The partial wave expansion
+can be truncated as usual at some maximum / if the interaction potential falls to zero rapidly enough. Thus the close
+coupling problem requires solution of a finite set of coupled second-order differential equations.
+The number of coupled equations can usually be further reduced by symmetry. For example, A and B generally
+contain angular momenta, and these may be coupled to the angular momentum of relative motion / to form a total
+angular momentum / which is a constant of the motion. Then the equations (2.4) decouple into separate sets for
+each J (Arthurs and Dalgarno 1960; Jacob and Wick 1959). In some cases further decoupling is possible—for
+example, due to conservation of parity.
+Information about the outcome of the collision is contained entirely in the asymptotic behavior of fy(R). If the
+total wavefunction is constructed as an incoming plane wave with initial quantum numbers y and outgoing spherical
+waves with final quantum numbers y', then the behavior of fy>v{K) at large R defines the scattering matrix S:
+frv(R) ä hry exp [~i{kyyR - Itt/2)] - (k'yy/kry)ll2Sry exp [i(kryR - 1^/2)].
+
+.
+
+(2.6)
+
+The additional index y on the radial functions refers to the initial quantum numbers for the system imposed by the
+choice of boundary conditions, and
+ky,y = (2p/h*)(E - Ey,)
+(2.7)
+is the wave number for relative motion. (Recall that the total energy E = ETel + Ey9 with Erel the relative collision
+energy.)
+All observable quantities can be computed from the 5 matrix. For example, for collisions between a rigid rotor and
+an atom, the cross section for rotational excitation from level j to y" is (in the coupled angular momentum representation, summed over final and averaged over initial degenerate levels; Arthurs and Dalgarno 1960)
+</7; Erel) = 2
+J
+
+Erel) =
+
+27,, 2 2 (2J +
+~T~ LJKjj
+
+~
+
+Erel + £))|2 .
+
+(2.8)
+
+© American Astronomical Society • Provided by the NASA Astrophysics Data System
+
+197 6ApJ. . .205. .7 6 6G
+
+768
+
+GREEN AND THADDEUS
+
+Vol. 205
+
+The superscript J ipdicates the partial cross section or S matrix for total angular momentum / = 7 + /; Erel is
+the energy of relative motion, and Ej is the rotational energy of the initial level. Similarly, the cross section which
+describes collision-induced spectral pressure broadening of the isolated ja-jb spectral line is given by (Shafer and
+Gordon 1973)
+Etel) =~
+2
++ 0(24 + 1) ia n h\(ja n jb fôr (2.9)
+EbrsJa(jJ\jJ; Ea)]
+k 2 ^
+h l'Ja)\jb I Ja
+JaW
+where ^ei = Ea — Eja = Eb — Ejb =
+w = 1 for dipole spectra and n = 2 for Raman spectra, and
+braces denote 6-j symbols (Edmonds 1960).
+b) Solution of the Close Coupled Equations
+The coupled differential equations (2.4) can be solved by standard step-by-step numerical integration techniques,
+such as the methods of Numerov (Allison 1970) and DeVogelaere (Lester 1971). These procedures require excessive
+amounts of computer time when applied to many coupled channels, however, and more efficient techniques have
+been developed in the last few years. Johnson and Secrest (1966) noted that the wavefunctions f{R) are generally
+not needed, but only the asymptotic behavior as described by the S matrix. They therefore developed differential
+equations (or, alternatively, integral equations) for the direct computation of S. Whereas the equations for f(R)
+often suffer from numerical instabilities, those for S do not. Another method has been developed by Sams and
+Kouri (1969); these authors replace the coupled differential equations with coupled integral equations. Light (1971)
+has reformulated the N coupled second-order equations as IN coupled first-order equations. Perhaps the most
+useful approach has been developed by Gordon (1969, 1971) who replaces the interaction potential V(R) in
+successive radial intervals by approximations for which analytic solutions are known, and f(R) is obtained by
+propagating such solutions from step to step. Gordon’s method utilizes the fact that V(R) is usually a slowly varying
+function whereas the f(R) are oscillatory.
+We have chosen Gordon’s method for solving the close coupled equations. With this method it is easier to adjust
+the integration step size to maintain a desired level of accuracy, and a large saving in computational effort can be
+obtained when it is realized that the errors introduced by other approximations (such as basis set truncation and
+inaccurate interaction potentials) do not warrant extreme accuracy in solving the coupled differential equations.
+Also, with Gordon’s method the S matrix calculation may be repeated at additional total energies with little
+additional computation. Calculations at several energies are necessary because the cross sections must be averaged
+over a Boltzmann distribution of collision energies for most physical processes. The scattering calculations reported
+below were done with a modified and somewhat extended version of Gordon’s computer code.1
+From the astrophysical point of view, then, the close coupling method need no longer be considered intractable.
+Efficient algorithms and fast computers now exist which can handle scattering problems requiring fifty or so coupled
+channels, and many of the rotational excitation problems at the temperatures of interstellar clouds fall into this
+category.
+c) Effect of Basis Set Truncation
+The major approximation in the close coupling method is the retention of only a finite subset of the complete
+set of channels. It is crucial, therefore, to understand the errors which may be introduced by this approximation.
+To make the discussion more concrete we consider rotational excitation of CO by a structureless, spherical projectile. Then in equation (2.1),
+is the Hamiltonian of a linear rigid rotor, and the internal coordinates of A
+are just the angles of orientation of the rotor; HB is the null operator, and B has no internal coordinates. The eigenfunctions of Ha are the complete set of spherical harmonics
+such that the rotor has angular momentum j
+with projection m on a space-fixed axis. Following Arthurs and Dalgarno (1960) j is coupled to the angular
+momentum of relative motion / to form a total momentum /, and the coupled equations may be solved separately
+for each /. The channels are thus specified by y = y, /. The basis set truncation involves retaining only a limited
+number of rotor j values: the necessary / values are determined for each J by angular momentum coupling, i.e.,
+\J-j\ <l<J+j.
+Only a finite number of the rotational levels are energetically accessible at a given collision energy. Rotor levels
+whose energy is higher than the available energy are called closed channels. The wavenumber (krv in eq. [2.6]) for
+a closed channel is an imaginary number; hence, for such channels the radial functions must asymptotically
+approach decaying exponentials and the S matrix elements are zero. Although closed channels cannot contribute
+to the wavefunction at large R, they may contribute in the region of strong interaction. The physical interpretation
+of such a contribution is simple. A large momentum is transferred from the projectile to the rotor causing it to
+speed up at the beginning of the collision, and some of this momentum is transferred back to the projectile before
+the collision is over. In quantum language, the collision occurs through a virtual excitation to a state of high angular
+1
+The original program is available through the Quantum Chemistry Program Exchange, University of Indiana, Bloomington,
+Indiana as program number 187. We are grateful to R. G. Gordon for numerous helpful discussions concerning his program.
+
+© American Astronomical Society • Provided by the NASA Astrophysics Data System
+
+197 6ApJ. . .205. .7 6 6G
+
+ROTATIONAL EXCITATION OF CO
+
+No. 3, 1976
+
+769
+
+momentum of the rotor. Physical intuition suggests that successively more energetic closed channels will contribute
+decreasingly to the description of the collision process. This conjecture has also been demonstrated more rigorously
+by Miller (1971). By similar reasoning, for a collisional excitation from j to jf one might expect that excitations to
+levels far above either j or j' are not very important whether or not these channels are closed. This last conjecture
+can be demonstrated more formally by perturbation theory arguments if the coupling is not too strong (i.e., if the
+potential is not too anisotropic).
+For collisions between a diatomic molecule and a spherical projectile, the interaction potential is most conveniently
+expanded in terms of Legendre polynomials (cf. eq. [3.1]). If the highest significant term in this expansion is Amax,
+then there is no direct coupling (eq. [2.5]) between statesy',y" such that \j" — j'\ > Amax. Then, if transitions from
+j to j' are of interest, to first order in the coupling potential, the only important basis functions are those lower than
+Amax plus the larger ofjj'. Of course, if the coupling potential is strong (highly anisotropic), higher order (indirect
+coupling) effects are not negligible, and a larger basis than that indicated by these simple arguments may be
+necessary.
+The effect of basis set truncation can be examined in an empirical manner by considering the convergence of the
+S matrix (or the cri;) as the basis is increased. Such studies have been reported by Lester and Bernstein (1967),
+Sams and Kouri (1970), and Bastes and Secrest (1972). Similar studies are presented in the Appendix for calculations on CO.
+The assumption that CO is a rigid rotor is equivalent to a basis set truncation: only the ground vibrational (and
+electronic) state is included. Because vibrational energies are two to three orders of magnitude larger than rotational
+energies, the higher vibrational channels are closed at energies of interest here. However, these channels can participate in a collision just as the closed rotational channels can. Any change in the equilibrium CO bond length
+during the collision is described in the close coupling formalism as a virtual vibrational excitation. Bastes and
+Secrest (1972) and Lester and Schaefer (1973) have examined the effect of closed vibrational channels on the
+rotational excitation of H2; their results indicate errors of less than about 10 percent due to exclusion of closed
+vibrational channels. It should be noted in this context that H2 is an unfavorable case for the rigid rotor approximation, since the ratio of rotational to vibrational energy is much larger for H2 than for most diatomic molecules.
+For other molecules the rigid rotor approximation is therefore expected to produce errors of less than 10 percent.
+The assumption of a structureless projectile can also be considered in terms of basis set truncation. For He and H
+only the electronic degrees of freedom are ignored, and this is undoubtedly reasonable. The most interesting projectile from the astrophysical point of view, however, is H2, and the calculations reported below treat H2 as
+spherically averaged in its lowest rotational level; this is equivalent to including only this one level in the basis set.
+Although it is possible to include excited H2 rotational levels, because of the additional labor only limited rotorrotor calculations have been done to date.2 The rotational energy of H2 is about 30 times larger than that of CO,
+and rotational excitation of the projectile is indeed energetically impossible for nearly all energies considered here.
+However, it would be very desirable to perform test calculations which include these closed H2 rotational channels
+to examine the error introduced by this approximation.
+d) Average over Velocity Distribution
+The rate of collisional excitation from level j to level i is the product of the number density of the projectiles times
+a rate constant
+which is related to the cross section as
+Rij — voij,
+
+(2.10)
+
+where v is the (relative) velocity of the projectiles. In general the rates sample a distribution of velocities, and one
+must take an average over this distribution. For the most common case in which the velocities are described by a
+Maxwell-Boltzmann distribution at kinetic temperature Tk,
+Rii =
+
+(7?)12 (¿)21°°dEE exp
+
+[_
+
+(W*)K(£),
+
+(2.11)
+
+where ju, is the reduced mass for the collision and k is Boltzmann’s constant. A similar average is appropriate for
+the pressure broadening cross sections. It is necessary therefore to obtain o^E) over the energy range which is
+significantly sampled by the weighting function, E exp [—(£/&rfc)], for the kinetic temperatures of interest.
+Except at low energies the cross sections are generally smooth functions. At energies comparable with or less
+than the well depth, however, a variety of resonance phenomena occur (see, e.g., Burke et al. 1969). These lead to
+oscillatory structure in a^E) which may present difficulties in computing energy averages. To assess the magnitude
+of this possible error we have performed numerical experiments, increasing the number of energy points used in
+the numerical integration of equation (2.11). It appears that this error can be kept below about 10 percent even with
+rather coarse grids of 20 to 40 energy points. The narrow, sharply peaked resonances which may not be found with
+a coarse grid actually contribute very little to the average whereas broader, weak resonances are generally found
+2
+A close coupling treatment of elastic H2-H2 collisions has been reported by Monchick, Brown, and Munn (4973), and more
+extensive calculations have been reported for this system by Green (1975ö).
+
+© American Astronomical Society • Provided by the NASA Astrophysics Data System
+
+197 6ApJ. . .205. .7 6 6G
+
+770
+
+GREEN AND THADDEUS
+
+Vol. 205
+
+with reasonable grids. Because only a few channels are open in the resonance region, it is economical to use smaller
+basis sets and a denser energy grid here. For the numerical integration we have used a simple trapezoidal rule
+algorithm. This algorithm has the desirable feature of preserving detailed balance (the relation between
+and
+Rn) provided the S matrix is symmetric, a condition which is satisfied to numerical accuracy by the close coupling
+program.
+III. INTERACTION POTENTIAL
+a) Born-Oppenheimer Approximation
+The dominant contribution to the intermolecular potential—V(RA, RB, R) in equation (2.2)—is the Coulomb
+interaction between the electrons and nuclei of target and projectile. Other effects, such as magnetic and spin interactions, are generally not important in low-energy collisions between closed-shell, ground state species. If the total
+wavefunction is expanded in target and projectile eigenfunctions—as in equation (2.3)—the Coulomb interaction
+will have off-diagonal matrix elements to excited electronic states. Thus, although these excited electronic states are
+energetically inaccessible and electronic excitation is not of interest, the collision proceeds through virtual electronic
+excitations in this representation.
+Fortunately, one can generally simplify the scattering problem by choosing a different representation where there
+is & single effective interaction potential which implicitly accounts for virtual electronic excitations of target and
+projectile but which operates only in the space of the nuclear coordinates. This is accomplished as usual by the
+Born-Oppenheimer approximation: the electronic motion is assumed to be very rapid compared with nuclear
+motion so that the electrons adiabatically adjust to nuclear positions and the total wavefunctions can be written
+as a product of nuclear and electronic terms :
+
+and
+= (H* + //ßnuc)'Fß,el*FJ
+Then H/1 + HBl + V is just the electronic (Born-Oppenheimer) Hamiltonian for the combined target-projectile
+molecule, whose eigenvalues are electronic potential energy surfaces for the combined system, and whose eigenfunctions span the same space as {'F^} x {TB>ely}. Because both of these sets span the same space, either can be
+used as the expansion basis, and, if electronic excitation is not of interest, the scattering calculation is greatly
+simplified by using the target-projectile electronic functions rather than the separate target and projectile electronic
+functions. Virtual electronic excitations which may still be induced—for example, by B-O breakdown terms—
+are then negligible so that the scattering problem reduces to a consideration of nuclear motion on a single electronic
+potential energy surface.
+The interaction potential is, of course, still a function of the nuclear coordinates of target and projectile as well
+as of the interaction coordinate. For a diatomic molecule (rigid rotor) and a spherical projectile, the potential
+can be expressed as a function of the distance R from the molecule center of mass to the projectile and the
+angle 6 between R and the molecular axis. (See Fig. 1.) It is convenient to expand the angular dependence as
+V(R, 0) = 2 v¿R)Pk(cos 0),
+A
+
+(3.1)
+
+where PK are Legendre polynomials.
+
+He
+
+CO center of mass
+
+k-1218 a.u. *|*-0.9Mau.—*1
+Fig. 1.—Coordinate system for CO collisions with a spherical projectile
+
+© American Astronomical Society • Provided by the NASA Astrophysics Data System
+
+197 6ApJ. . .205. .7 6 6G
+
+No. 3, 1976
+
+ROTATIONAL EXCITATION OF CO
+
+771
+
+b) Experimental Information
+Interaction potentials manifest themselves in a variety of static (i.e., equilibrium) and dynamic (i.e., collision)
+phenomena—for example, equilibrium structure of solids, virial coefficients of gases, viscosity, sound absorption,
+spin-lattice relaxation, spectral pressure broadening, fluorescence quenching, etc. (See, e.g., Hirschfelder, Curtiss,
+and Bird 1954; Amdur and Jordan 1966; Bernstein and Muckerman 1967; Birnbaum 1967; Gordon, Klemperer,
+and Steinfeld 1968; Margenau and Kestner 1971.) Measurements of these phenomena can, in principle, be used to
+obtain information about interaction potentials. Despite the variety of available methods, however, relatively little
+information has been obtained this way.
+Perhaps the most important observation about the experimental determination of intermolecular potentials is
+that essentially all methods are indirect. That is, the potential is obtained only by comparing observations with
+predictions based on (parametrized) model potentials. Because the models are necessarily rather inflexible, and
+because different experiments tend to sample different parts or different averages of the interaction, it is often
+found that a potential which fits one type of data will be inadequate for another. This point has been emphasized
+recently by Gordon and co-workers (Neilsen and Gordon 1973; Shafer and Gordon 1973) who note the necessity
+of flexible models and the simultaneous fit to several experiments.
+It is commonly assumed that certain collisional phenomena are sensitive only to the spherically averaged, isotropic part of the interaction, i.e., the A = 0 term in equation (3.1). Thus gas phase viscosity and diffusion coefficients and virial data (Hirschfelder, Curtiss, and Bird 1955) and, more recently, molecular beam scattering
+experiments (Bernstein and Muckerman 1967; Amdur and Jordan 1966) are generally interpreted this way.
+Although there is some question about the validity of analyzing molecular data in terms of spherical potentials
+(see, e.g., Monchick and Green 1975; Green and Monchick 1975; and references therein), such information is
+available for many systems, often in the form of a Lennard-Jones or similar potential function. The Lennard-Jones
+potential is given in terms of two parameters, the position rm and depth € of the well:
+F0LJ(R) = €[(rm/R)12 - lirJRf].
+
+(3.2)
+
+c) Ab Initio Methods
+The problem of determining the interaction potential between two systems, A and 2?, is essentially the quantum
+chemical problem of determining the total energy of the collection of electrons and nuclei of A and B. Within the
+Born-Opperiheimer approximation discussed above, the problem reduces to determining the electronic energy as a
+function of “clamped” nuclear geometry. The major contributions to the energy are the kinetic energy of the electrons and the Coulomb interactions among the electrons and nuclei; in some cases, however, other effects such as
+spin-orbit interaction may be important. The Coulombic, Born-Oppenheimer Schrödinger equation is (in atomic
+units)
+-1/22 V/2 + 2 l/k. - nl - 2z°/l*a - nl + 2 Z«Z»I\R* i
+i>j
+i.a
+a>b
+
+R
+
+bl - -EwW. *) = 0,
+J
+
+(3.3)
+
+where the indices ijrefer to electrons and a, b refer to nuclei; Za is the nuclear charge. The problem of solving this
+equation to determine E(R) has been extensively studied, and several sophisticated techniques are in current use
+(see, e.g., Schaefer 1972; Hinze 1974). It should be noted that the interaction energy is the difference between the
+total energy of the combined system and that of the separated systems. This can lead to large cancellation with
+subsequent loss of accuracy. It is crucial, therefore, to choose methods whose absolute error does not change rapidly
+with internuclear distances. In general, different techniques are useful at different separations, and it is convenient
+to distinguish between long-range, short-range, and intermediate distances.
+At large distances, A and B can be described as nonoverlapping charge distributions, and the interaction reduces
+to the standard electrostatic problem of interacting permanent and induced multipole moments. Because the interaction is small, it is accurately computed as a perturbation of the separate systems : the difference can be calculated
+directly by perturbation techniques avoiding the problem of cancellation. An explicit form for the long-range
+potential can then be written in terms of properties of A and B. For a diatomic molecule {A) and a spherically
+symmetric projectile (2?), the leading terms are (Buckingham 1967)
+KoL%R) = - [W + ïjfffu;) “'‘“s]*"6 ’
+
+(3-4a)
+
+V^R) = -(\mwAQAR-\
+
+(3.4b)
+
+VWR) - - [w + jfëriÿ «■
+V^{R) = -(\2l5)aBliAQAR-\
+
+,
+
+(3.4c)
+(3.4d)
+
+© American Astronomical Society • Provided by the NASA Astrophysics Data System
+
+197 6ApJ. . .205. .7 6 6G
+
+772
+
+GREEN AND THADDEUS
+
+Vol. 205
+
+where the angular dependence is expressed according to equation (3.1); ^ is the dipole moment, Q is the quadrupole
+moment, U the ionization potential, and a, a„, and «j., the polarizability and its components parallel and perpendicular to the molecular axis. For CO interacting with He, H, and H2 the second term in i?0LR and i?2LR dominates
+the first so that
+v2hn(R) =
+
+\ aAL) v0™(R) .
+óaA
+
+(aA
+
+(3.5)
+
+At small internuclear distances, the A and B charge distributions overlap strongly and the interaction becomes
+repulsive. In this region, the system is best described as a single molecule, and molecular orbital techniques such as
+the Hartree-Fock (HF) method are applicable. Orbital models assume that each electron moves independently in
+the field of the “ clamped” nuclei and the average field of the other electrons ; correlation of instantaneous individual
+electron motions is ignored. This reduces equation (3.3) to an effective one-particle Schrôdinger equation for each
+electron. At small separations the correlation energy is much smaller than the interaction energy, and it is also
+approximately independent of the separation; hence the HF method is reliable for computing the short-range
+potential. On the other hand, the dispersion energy which is responsible for much of the long-range interaction is
+due entirely to correlation effects and will be missing in any orbital calculation. Computer programs for obtaining
+HF energies are readily available. (See, e.g., Clementi, Kistenmacher, and Popie 1973; Csizmadia et al. 1966.) The
+computation time is roughly proportional to n4 where « is the number of electrons in the system, and typical running
+times for a 15-electron calculation, i.e., CO-H, are 1-3 minutes per nuclear configuration on a fast machine
+(e.g., an IBM 360/91).
+At intermediate distances the long-range attractive forces and the short-range repulsive forces compete to form a
+potential well, and this is the most difficult region for which to obtain accurate ab initio interactions. The long-range
+perturbation expansion fails as the charge distributions begin to overlap. Molecular orbital methods generally
+become inadequate in this region because the correlation energy is comparable with the interaction energy and
+varies rapidly with distance as the orbitals change from atomic to molecular in character. To obtain accurate ab
+initio potentials in the region of the well, configuration interaction (Cl) techniques which explicitly include correlation effects must be used. Cl, unlike HF, can approach the exact solution of equation (3.3) as the size calculation is
+increased. Cl requires roughly an order of magnitude more computer time than a HF calculation, and this represents
+a major project for all but the smallest systems. Nonetheless, such calculations are currently possible if a particular
+potential is sufficiently important. (See, e.g., Green et al. 1972; O’Neil et al. 1973.) Furthermore, Cl is likely to
+become more feasible as computational techniques improve. It should be noted that the Cl method is also accurate
+at short- and long-range and may be useful for the latter when properties of the separated systems are not known.
+d) Electron Gas Model
+The ab initio methods described in the preceding section rely on approximate solution of the appropriate
+Schrödinger equation. A variety of less rigorous techniques for obtaining interaction potentials have also been
+developed. We will discuss only one, a method proposed by Gordon and Kim (1972), which is quite simple, yet
+which appears to be remarkably reliable for certain systems at short and intermediate distances.
+The energy of a uniform electron gas is a function only of its density. Gordon and Kim (1972) use this fact plus
+the following assumptions to compute the interaction potential. (1) In each volume element, the electron density
+is approximately constant, and the energy contribution is related to this density by the uniform electron gas
+formulae; the total energy of the system is obtained by integrating over all space. (2) The electron density of the
+combined system is taken as the sum of the (HF) densities of the separated systems ; this assumption effectively
+limits the method to interactions between closed-shell systems where the charge distributions do not rearrange to
+form a chemical bond. The method fails at long-range : the induction energy is not obtained, since the charge distributions are not allowed to polarize, and the dispersion energy is not obtained as the interaction vanishes for
+nonoverlapping charge distributions. (See, however, Gordon and Kim 1974.) There is a growing body of evidence
+that this method is reliable for predicting the short-range angular dependence of the potential and the position of
+the well. (See, e.g., Kim 1973; Green 1974a; Cohen and Pack 1974; Green et al. 1975.) Details of the computational
+scheme as applied to a molecule interacting with an atom are presented elsewhere (Green et al. 1975).
+e) CO-He
+For CO-He, as for most other systems, only the isotropic part of the interaction potential has been inferred
+experimentally. Recent molecular beam scattering data have been fitted to a Lennard-Jones potential yielding
+rm = 6.61 atomic units and e = 19.1 cm-1 (cf. eq. [3.2]; Kuppermann, Gordon, and Coggiola 1973) in good agreement with earlier virial coefficient values rm = 6.67 atomic units and e = 20.8 cm-1 (Hirschfelder, Curtiss, and
+Bird 1954).
+The isotropic potential cannot cause rotational excitation so some method of determining the anisotropy is
+necessary. For preliminary calculations we adapted a method for obtaining the angle dependence which has been
+extensively used by other workers : short-range anisotropies were assumed to be proportional to the short-range
+
+© American Astronomical Society • Provided by the NASA Astrophysics Data System
+
+197 6ApJ. . .205. .7 6 6G
+
+No. 3, 1976
+
+ROTATIONAL EXCITATION OF CO
+
+773
+
+(Lennard-Jones) isotropic potential, and long-range anisotropies were taken from the asymptotic form of the longrange interaction (eq. [3.4]) (cf. Kinsey et al. 1968; Burke et al. 1969; Reuss and Stolte 1969; Neilsen and Gordon
+1973; Wagner and McKoy 1973; Saha et al. 1973). The resulting asymmetric Lennard-Jones (ALJ) potential can
+be written as
+FaljCR, ©) =*2 KS%R) + ^LR0R)]/7(cos 0) ,
+
+(3.6)
+
+where
+v^(R)={rmIRf^
+v0™(R) = -2(rm/Ry
+
+9
+
+vÁ™(R) = aAv0
+
+A = 1,2,
+
+SR
+9
+
+and i>alrCK) are taken from equation (3.4). Substituting values for the molecular constants in these latter equations
+gives
+v^ÇR) = 0.0073 (rJR)1,
+^LR(^) = -0.34(rm/R)6,
+
+(3.7)
+
+7
+
+v^(R) = 0.0048 (rm/R) .
+The short-range anisotropies are somewhat more difficult to obtain, but are often estimated from geometrical
+considerations. The ax term moves the “center of potential” away from the center of mass; assuming that CO like
+the isoelectronic N2 has the center of potential midway between the nuclei gives ax = —0.03. The a2 term deforms
+the potential from spherical to ellipsoidal; a value of a2 = 0.2 was chosen by comparison with ab initio calculations
+for H2-He. Values for rm and e were taken from virial coefficient data.
+The ALJ potential is a “reasonable” estimate insofar as it is based on the amount of experimental information
+which is available for most systems. However, pressure broadening coefficients predicted from this potential were
+about 30 times smaller than recent microwave values (cf. § INa). It should be noted that sound absorption data for
+CO and isotropically substituted N2 had also been interpreted (Kistenmacher et al. 1970) to indicate that
+is
+significantly larger than estimated from geometrical arguments. In an attempt to fit the pressure broadening data
+while still retaining the ALJ form, the short-range anisotropies, a1 and a29 were varied. These calculations indicated
+that the true short-range potential is much more anisotropic than originally estimated, and that the pressure broadening data is insufficient to determine both ax and a2.
+Another CO-He potential, based on a “loaded sphere” (LS) model, has been suggested to account for infrared
+line shapes and certain other data. This model assumes that the interaction is spherical but centered at some
+distance (the “loading” distance) from the center of mass; thus there is essentially one asymmetry parameter which
+can be varied to fit experimental data. The details of obtaining this potential for CO-He may be found in Gordon
+(1966) and Gordon and McGinnis (1971) and references therein. The LS potential is given explicitly as
+VU*, 0)/e = {1.628 x 105 exp [- l2(R/rm)] - 2(rm/R)6} + {1.139 x 105 exp [- l2(R/rm)] - 0.6(rJi^i^cos 6)
++ {1.139 x 105 exp [-12(^/rm)]-0.4(rm/^)6}F2(cosö),
+
+(3.8)
+
+1
+
+where rm = 6.61 atomic units and e = 23.6 cm “ . The isotropic part of this potential is rather similar to the spherical
+ALJ term, except that the LS potential has an exponential (modified Buckingham) short-range repulsion which is
+generally more realistic than an inverse power. The large short-range anisotropies in the LS potential substantially
+improve agreement with pressure broadening data. Indeed, using this potential in conjunction with semiclassical
+dynamics calculations, Gordon (1966) predicted pressure broadening coefficients in excellent agreement with
+experiment; however, the quantum scattering calculations presented in § INa, using the same potential, give values
+10-20 percent smaller than the semiclassical results.
+The final potential was based on ab initio calculations using the electron gas model of Gordon and Kim (1972).
+The ab initio surface is determined at a set of points, V(Ri9 0y), and is therefore much more flexible than any (parametrized) analytic form. For example, the anisotropy can vary with iL For scattering calculations, the surface must
+be analyzed into a Legendre series (eq. [3.1]). At each value of Ri9 therefore, the potential is obtained at several
+values of 0y,y = 1, V, and fit to
+ViR,, Qj) = 2 vÁRÚPÁcos Qj),
+A=0
+
+j = 1,N.
+
+(3.9)
+
+The convergence of the Legendre expansion was checked by varying the number of 0y (to a maximum of TV = 9).
+It was found that N = 7 gave satisfactory results. (For other systems it has been found preferable to employ a
+
+© American Astronomical Society • Provided by the NASA Astrophysics Data System
+
+197 6ApJ. . .205. .7 6 6G
+
+774
+
+GREEN AND THADDEUS
+
+Vol. 205
+
+least-squares fit to eq. [3.9] minimizing the root-mean-square average deviation. See, e.g., Alexander and Berard
+1974.) Smooth radial potentials and derivatives were obtained from the vK(Ri) by five-point Lagrange interpolation
+(see, e.g., Kopal 1955). Where necessary the vK were extrapolated at short-range by fitting an exponential to the
+first two calculated :
+= JÄexp(-5ÄJR),
+
+R < R2.
+
+(3.10)
+
+The vÁ at large distances were obtained by extrapolating with an inverse power fit to the last two tabulated points:
+va(R) = CxR-\
+
+R>Rn-1.
+
+(3.11)
+
+The importance of higher anisotropic terms in the potential was studied by including successively more of these
+in trial scattering calculations. Terms through À = 4 made significant contributions to computed cross sections;
+the next term, À = 5, was also retained in the final calculations. Pressure broadening coefficients calculated from
+the ab initio potential were in better agreement with experiment than those from the LS potential.
+The position of the minimum for the spherical part of the ab initio potential is in good agreement with the molecular beam scattering and viscosity data. The well depth, however, is about 50 percent larger than experiment. The
+statistical electron gas model is known to predict too deep a potential well for other He interaction potentials
+(Gordon and Kim 1972), possibly due to an incorrect handling of the self-exchange term (Rae 1973; Cohen and
+Pack 1974). To compensate for this inadequacy, all negative potential points were scaled by the factor f. Also,
+the v0(R) and v2(R) potentials were joined with the correct asymptotic forms (eqs. [3.6] and [3.7]) at about 8 atomic
+units, since the electron gas model is known to be incorrect in this region. Because the long-range ^i(R) and vQ(R)
+terms are very small, the computed values, which go rapidly to zero, were retained. The pressure broadening
+coefficients were insensitive (to 10%) to either scaling the well depth or modifying the long-range potential. The
+final “modified” ab initio (MAI) potential is given in Table 1, and shown in Figures 2 and 3.
+All three potentials, ALJ, LS, and MAI, are consistent with viscosity and virial coefficient data and also with
+molecular beam elastic differential scattering experiments. This is because the v0(R) term is essentially the same for
+all three at thermal energies (see Fig. 2). Only the MAI potential, however, accurately reproduces recent microwave
+TABLE 1
+CO-He MODIFIED AB INITIO (MAI) POTENTIAL*
+v. (R)
+-26990.0
+-10058.0
+-6107.0
+-5699.0
+-5501.0
+-4937.0
+-4088.0
+-3192.0
+-2363.0
+-1672.0
+-1136.0
+-743.7
+-468.0
+-281.2
+-159.0
+-82.0
+-35.5
+-8.9
+3.4
+7.6
+8.9
+8.7
+7.7
+6.4
+5.1
+3.9
+3.0
+2.2
+1.6
+1.2
+0.9
+0.6
+0.5
+
+VR)
+237900.0
+129780.0
+77520.0
+49150.0
+32130.0
+21200.0
+13900.0
+9032.0
+5795.0
+3660.0
+2268.0
+1376.0
+812.2
+463.1
+251.3
+126.0
+54.5
+15.4
+-2.9
+-8.7
+-10.5
+-10.1
+-8.9
+-7.3
+-5.7
+-4.4
+-3.3
+-2.4
+-1.7
+-1.3
+-0.9
+-0.6
+-0.5
+
+R in atomic units;
+
+in cm -1
+
+vft(H)
+147900.0
+89801.0
+56290.0
+35770.0
+22810.0
+14451.0
+9029.0
+5550.3
+3343.3
+1960.3
+1110.3
+598.8
+298.9
+129.1
+37.6
+-5.5
+-18.7
+-22.6
+-21.9
+-19.1
+-16.6
+-15.6
+-13.0
+-11.8
+-10.2
+-9.0
+-7.9
+-7.0
+-5.9
+-5.0
+-4.3
+-3.7
+-3.1
+
+2.00
+2.25
+2.50
+2.75
+3.00
+3.25
+3.50
+3.75
+4.00
+4.25
+4.50
+4.75
+5.00
+5.25
+5.50
+5.75
+6.00
+6.25
+6.50
+6.75
+7.00
+7.25
+7.50
+7.75
+8.00
+8.25
+8.50
+8.75
+9.00
+9.25
+9.50
+9.75
+10.00
+*
+
+v3(R)
+-73430.0
+-32490.0
+-17030.0
+-10670.0
+-7509.0
+-5545.0
+-4083.0
+-2968.0
+-2104.0
+-1454.0
+-980.6
+-646.0
+-415.9
+-261.2
+-159.5
+-94.1
+-53.1
+-28.0
+-13.1
+-4.7
+-0.2
+1.3
+1.9
+1.9
+1.7
+1.5
+1.1
+0.8
+0.6
+0.5
+0.3
+0.2
+0.1
+
+v„(R)
+112300.0
+49860.0
+25600.0
+14860.0
+9277.0
+6078.0
+4015.0
+2667.0
+1758.0
+1146.0
+738.0
+469.8
+295.4
+183.2
+111.8
+67.0
+39.2
+22.3
+12.2
+6.3
+2.9
+1.0
+0.0
+-0.5
+-0.6
+-0.7
+-0.6
+-0.5
+-0.3
+-0.3
+-0.2
+-0.1
+0.0
+
+vr(R)
+-38810.0
+-15410.0
+-6855.0
+-3555.0
+-2184.0
+-1495.0
+-1047.0
+-733.7
+-506.6
+-345.2
+-231.8
+-153.6
+-100.5
+-64.9
+-41.4
+-26.1
+-16.3
+-10.0
+-6.0
+-3.5
+-1.9
+-0.9
+-0.3
+0.1
+0.3
+0.4
+0.4
+0.4
+0.3
+0.2
+0.2
+0.1
+0.0
+
+© American Astronomical Society • Provided by the NASA Astrophysics Data System
+
+197 6ApJ. . .205. .7 6 6G
+
+No. 3, 1976
+
+ROTATIONAL EXCITATION OF CO
+
+775
+
+Fig. 2.—Comparison of the spherical average of several CO-He interaction potentials. Computed ab initio points are given by
+circles; modified ab initio (MAI),
+; Lennard-Jones (LJ),
+and loaded sphere (LS),
+.
+pressure broadening experiments (Nerf and Sonnenberg 1975). The calculated and experimental pressure broadening data are given in Table 2. Because the ab initio potential (unlike, for example, the LS potential) was obtained
+independently of pressure broadening data, this agreement is believed to be quite significant.
+The MAI potential is believed to accurately represent the true interaction, and it is instructive therefore to note
+how it differs from model potentials which have been used in previous studies. These models can conveniently be
+divided into two broad categories, one-center (molecular) potentials and many-center (dumbbell) potentials. The
+former are expanded according to equation (3.1) with the spherical term generally taken from gas kinetic data. The
+ALJ and LS potentials are typical examples of this approach. To our knowledge, no previous study using one-center
+interactions has included angular terms higher than À = 2, although, as can be seen in Figure 3, terms through À = 4
+are of comparable importance for CO-He. It can also be seen in Figure 3 that the anisotropies are not, in general,
+simply proportional to the spherical term, as is frequently assumed, but vary considerably with distance. In the
+many-centered approach (see, e.g., Chu and Dalgarno 1975) the potential is expanded as pairwise additive atomatom interactions. For example, the CO-He interaction would be written as
+v(R, 0) = r(jRc_He, ^O-He) ^ ^cC^C-He) + ^oC^O-He) •
+
+(3-12)
+
+The MAI potential cannot be written in this form; the assumption of additive forces is a very poor approximation
+for this system. The inadequacy of the dumbbell model has also been noted by Harris et a/. (1974) in connection
+with the experimental equilibrium geometry in certain van der Waals molecular complexes.
+/) CO-H
+Unlike He, the valence shell of H is not saturated (i.e., not closed-shell), and the interaction between H and CO
+is expected to be qualitatively different from that for He-CO because of the possibility of forming a chemical
+bond. Thus the HCO radical is a known (albeit reactive) chemical species. The part of the potential energy surface
+near the HCO equilibrium geometry, however, is not relevant for H-CO collisions at the low kinetic energies of
+interstellar cloud. As a H atom approaches a CO molecule, dispersion forces initially lead to attraction. At closer
+approach, however, the interaction rapidly becomes repulsive, forming a normal van der Waals well, since a
+
+© American Astronomical Society • Provided by the NASA Astrophysics Data System
+
+197 6ApJ. . .205. .7 6 6G
+
+R (atomic units)
+R (atomic units)
+Fig. 3.—Angular dependence of the CO-He (MAI) potential. The Legendre polynomial expansion vÁ(R) of eq. (3.1) is shown at
+left; and V(R, 0) for selected angles is shown at right.
+TABLE 2
+CO-He Pressure Broadening Cross Sections (Â2)
+Spectroscopic
+Line
+0-1.
+1-2.
+2-3.
+0-2.
+1-3.
+
+Computed
+Temperature (K)
+
+ALJ*
+
+LS*
+
+MAIt
+
+Experimental^:
+
+77
+150
+300
+77
+150
+300
+77
+150
+300
+77
+150
+300
+77
+150
+300
+
+0.8
+
+26.6
+
+28 ± 3
+
+0.5
+
+23.5
+24.5
+
+32.1
+28.7
+26.1
+28.8
+26.2
+24.1
+27.4
+25.2
+22.9
+32.1
+28.8
+26.1
+28.8
+26.2
+24.1
+
+21Ï9
+Ó.8
+
+26.1
+23.5
+
+27 ± 3
+29 ± 6
+
+* See text for description of potential; energy average by 4-point Gauss-Laguerre quadrature,
+t See text for description of potential; energy average by trapezoidal rule integration for 14
+energies between 20 and 600 cm “1.
+% Nerf and Sonnenberg 1975.
+
+© American Astronomical Society • Provided by the NASA Astrophysics Data System
+
+197 6ApJ. . .205. .7 6 6G
+
+No. 3, 1976
+
+ROTATIONAL EXCITATION OF CO
+
+111
+
+bonding electron pair cannot be formed from the electron configuration appropriate to a CO molecule and a H
+atom. At still shorter distance, however, this repulsive surface will cross an attractive potential energy surface that
+correlates with an excited ionic (charge-transfer) state at infinity and with the stable HCO molecule at short distances. Because both of these electronic potentials have the same overall symmetry, they cannot actually cross;
+rather the electronic structure of both states will change adiabatically near the “avoided crossing.” Thus the repulsive ground state potential surface will eventually become attractive leading to the stable HCO configuration. This
+surface will, of course, have a substantial energy barrier which must be overcome in a chemically reactive collision,
+and the rate of such collisions will be insignificant at low temperatures compared with rotationally inelastic collisions that sample only the van der Waals well and the repulsive outer part of the potential barrier.
+Because it is not a closed-shell system, CO-H is not expected to be adequately described by the Gordon-Kim
+electron gas model. The HF method, however, should be reliable for the repulsive outer wall of the potential barrier
+(and also near the HCO equilibrium geometry), although not for the long-range dispersion forces nor near the
+maximum of the potential barrier. This latter failing is an example of the general failure of the HF method whenever the electronic structure is not adequately described by a single electronic configuration. Fortunately, for the
+low temperatures in interstellar clouds, it is necessary to know the repulsive potential only in the region where the
+HF method is adequate. We have accordingly computed HF wavefunctions for this part of the interaction.3
+For the long-range potential we have used perturbation theory results (cf. eq. [2.4]). Although there is no
+experimental data for this system, the position and depth of the van der Waals minimum were estimated from the
+usual combining rules (Hirschfelder, Curtiss, and Bird 1954) to be rm = 6.5 atomic units and € = 41 cm-1. The
+long-range attractive potential was joined smoothly to the HF repulsive potential between 5 and 6 atomic units to
+create an appropriate van der Waals well. The final potential is given in Table 3.
+Our long-range potential and van der Waals well are quite similar to those adopted by Chu and Dalgarno (1975)
+but our short-range repulsion is significantly different from the dumbbell model (i.e., V = FCh + Poh) used by
+them. In this context one should recall the inadequacies of the dumbbell model which were noted in § lile. Except
+at the lowest temperatures, rotationally inelastic CO-H collisions are influenced mainly by the shape of the repulsive potential. Our rate constants therefore differ in detail from those presented by Chu and Dalgarno.
+g) co-h2
+Just as the interaction between CO and a hydrogen atom can lead to the chemically bonded HCO radical, the
+interaction with a hydrogen molecule includes the possibility of chemical bond formation to give formaldehyde.
+However, to reach the portion of the potential energy surface near the H2CO equilibrium geometry requires considerable changes in the CO and H2 bond lengths as well as rearrangement of the electronic charge distribution, and,
+as for CO-H, there is a large energy barrier which must be overcome to do this. At the low kinetic energies considered here only the rigid rotor (i.e., fixed CO and H2 bond length) portions of the interaction surface and only
+distances outside the potential barrier will be important.
+The CO-H2 interaction is more complicated than that for CO-He or CO-H due to its dependence on two
+additional degrees of freedom, the angles of orientation of H2. At the low temperatures of interstellar clouds
+essentially all H2 is frozen in the lowest / = 0 (or possibly the metastable / = 1) rotational level, and collisional
+3
+Calculations were performed with the MOLECULE-SCF program written by J. Almlof, Uppsala, Sweden, and P. S. Bagus,
+IBM, San Jose, California. We are grateful to P. S. Bagus and U. Wahlgren for providing a copy of this program.
+
+TABLE 3
+CO-H POTENTIAL*
+
+3.2
+3.6
+4.0
+4.4
+4.8
+5.2
+5.6
+6.0
+6.4
+6.8
+7.2
+7.6
+8.0
+8.4
+8.8
+*
+
+vft(R)
+
+VjCR)
+
+VR>
+
+12374.0
+7680.0
+4580.0
+2640.0
+1473.0
+500.0
+120.0
+-25.4
+-40.6
+-38.7
+-32.4
+-25.8
+-20.2
+-15.7
+-12.2
+
+-1739.0
+-2045.0
+-1797.0
+-1367.0
+-944.0
+-380.0
+-106.0
+-12.0
+-6.0
+-2.0
+-1.0
+0.0
+0.0
+0.0
+0.0
+
+11960.0
+7570.0
+4750.0
+2900.0
+1732.0
+632.0
+166.0
+12.0
+8.0
+4.0
+2.0
+-0.5
+-2.0
+-2.9
+-2.2
+
+v
+
+3<R)
+
+v4(R)
+
+-6120.0
+-3208.0
+-1888.0
+-1168.0
+-725.0
+-276.0
+-74.6
+-6.0
+-4.0
+-2.0
+0.0
+0.0
+0.0
+0.0
+0.0
+
+6407.0
+3142.0
+1665.6
+918.2
+510.6
+178.0
+45.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+
+R in atomic units; v-v in cm
+
+© American Astronomical Society • Provided by the NASA Astrophysics Data System
+
+197 6ApJ. . .205. .7 6 6G
+
+GREEN AND THADDEUS
+
+778
+
+Vol. 205
+
+excitation to higher levels is not energetically possible. It seems reasonable under these conditions that CO-H2
+collisions can be described by an effective potential, averaged over the H2 orientations. This idea is seen to be
+mathematically exact if only the spherically symmetric, / = 0, H2 rotational level is included in the close coupling
+basis set (cf. eq. [2.5] and Green 1975a). The adequacy of this approximation for collisions with ortho-H2 is less
+obvious because of the possible importance of long-range H2 quadrupole interactions which vanish only for / = 0;
+for CO-H2 collisions such long-range interactions are probably not important owing to the very small dipole
+moment of CO. The validity of using a potential averaged over H2 orientations has found some experimental justification in molecular beam differential elastic scattering data of Kuppermann et al. (1973) and also in the microwave
+double resonance experiments of Oka (1973). As discussed below recent microwave and Raman pressure broadening
+results can also be explained within this framework.
+While the assumption of a spherical H2 projectile simplifies the scattering calculations, the problem of obtaining
+the potential is still complicated by the additional degrees of freedom. An ab initio calculation, for example, should
+in principle be done at several H2 orientations and then averaged over the rotational motion. For the calculations
+reported here a simpler, more empirical method of obtaining the interaction was desired. The ability of such a
+potential to reproduce experimental data, of course, will provide a necessary although not a sufficient condition
+for its validity.
+The experimental Lennard-Jones isotropic potential for CO-H2 is similar to that for CO-He. Parameters from
+molecular beam scattering data (Kuppermann et al. 1973) are rm = 6.61 atomic units and € = 46 cm-1. Thus the
+potential well occurs at about the same position as for CO-He but is somewhat deeper. The short-range anisotropy,
+which is the most important factor in determining rotational excitation and also pressure broadening for this
+system, is expected to reflect mainly the shape of the CO electron charge distribution, and, to a lesser extent, the
+“size” or charge distribution of the projectile. Because H2 and He both have two electrons, it seemed probable that
+the CO-He potential might, with small modifications, adequately describe the repulsive short-range CO-H2
+interaction. Accordingly, the CO-He ab initio potential was modified in the following manner. (1) The well depth
+was scaled to the experimental e by the same procedure used for the CO-He (MAI) potential; all negative energies
+were multiplied by 1.36. (2) As was also done for CO-He, the v0(R) and v2(R) terms were joined with the correct
+(i.e., perturbation theory) asymptotic curves at about 8 atomic units. (3) Finally, the resulting potential was subject
+to an overall radial scaling factor to account for the larger “ size ” of H2 compared with He. The value for this factor,
+1.095, was selected by comparing predicted and experimental pressure broadening data. The variation of predicted
+pressure broadening cross sections as a function of the radial scaling factor is shown in Table 4 along with experimental values for comparison. The final potential is able to reproduce, to within experimental error, recent microwave data for broadening of the 0-1 line by both H2 and D2 at liquid nitrogen and room temperatures (Nerf and
+Sonnenberg 1975), and also H2 broadening of the 1-3 Raman line at liquid nitrogen temperature (Campaan et al.
+1973). The radial scaling necessary to reproduce pressure broadening data is also consistent, within experimental
+error, with the scattering and viscosity data.
+IV. NUMERICAL RESULTS: CROSS SECTIONS AND RATE CONSTANTS
+a) CO-He
+Close coupling calculations were done for each of the three potentials—ALJ, LS, and MAI—discussed in § lile.
+A number of calculations were performed to examine the effect of basis set truncation on computed cross sections.
+As anticipated, truncation error was most severe for the MAI potential, which has the largest anisotropies, and,
+therefore, the largest coupling matrix elements. Results of basis set tests with this potential are presented in the
+Appendix. Basis set size will be abbreviated as Bjm^ which indicates the inclusion of rotor levels y = 0 toy = ymaxTABLE 4
+Pressure Broadening of CO by H2 and D2 *
+H2
+
+Scaling
+Factor t
+1.0
+1.058
+1.096.......
+1.115.
+Experimental
+
+d2
+
+0-1(77 K)
+
+0-1(300 K)
+
+1-3(77 K)
+
+0-1(77 K)
+
+—
+0-1(300 K)
+
+28
+34
+38
+41
+
+...
+...
+30
+32
+
+25
+32
+35
+36
+
+43
+46
+55
+53
+
+39
+40
+
+38 ± 4J
+
+31 ± 3t
+
+35 ± 6§
+
+50 ± 5J
+
+38 ± 4t
+
+2
+
+* Cross sections in Â for spectral line ja-jb computed with a B5 basis set and a 2-point Gauss-Laguerre energy
+average. Estimated uncertainty in calculations is about ± 2 Â2.
+t Radial scaling factor to convert CO-He to CO-H2 potential; see text for details.
+t Nerf and Sonnenberg 1975.
+§ Campaan et al. 1973.
+
+© American Astronomical Society • Provided by the NASA Astrophysics Data System
+
+197 6ApJ. . .205. .7 6 6G
+
+No. 3, 1976
+
+ROTATIONAL EXCITATION OF CO
+
+779
+
+The test calculations indicate that inclusion of all closed plus one open channel gives computed aytj within 10 percent of the infinite basis limit, with the possible exceptions of some small cross sections for large Ay, and cross
+sections into or out of j — jmaiX.
+Cross sections for rotational excitation and pressure broadening were computed for each of the potentials via
+equations (2.8) and (2.9) for a range of energies and averaged according to equation (2.11) at several kinetic temperatures. A B5 basis was used for all calculations with the ALJ and LS potentials. For the more realistic MAI
+potential, a B5 basis was used below 30 cm“1, B6 between 30 and 60 cm-1, B7 between 60 and 80 cm-1, and a B8
+between 80 and 250 cm“1; a B6 basis was used to estimate cross sections at higher energies necessary for the tail
+of the Boltzmann distribution. The cross sections predicted by the three potentials differ significantly as can be
+seen in Figure 4 which presents computed 0
+cross sections as a function of energy.
+The ALJ potential was rejected because, as noted previously, it fails to reproduce the experimental pressure
+broadening cross sections (see Table 2). The LS potential gives pressure broadening cross sections which appear
+somewhat small, although generally within experimental error. The LS potential was rejected in favor of the MAI
+potential for several reasons. First, the ab initio potential does appear to give better agreement with the pressure
+broadening data. Second, the MAI potential is more flexible, since the anisotropy is a function of distance; the LS
+anisotropies were fixed to fit certain experiments (e.g., infrared line shapes at room temperature) and are likely to be
+less adequate for processes that sample different parts of the interaction. Finally, the LS potential does not behave
+correctly at large R\ in particular the Px anisotropy is too large and this might cause errors at low energies.
+Rate constants computed from the MAI potential are given in Table 5 for kinetic temperatures between 5 K and
+100 K. It is somewhat difficult to place error limits on these values due to the paucity of experimental data available
+for this system and a lack of experience with comparably accurate calculations for other systems. Errors due to
+basis set truncation and numerical integration over the velocity distribution are believed to be less than about
+10 percent (with the possible exception of rates connecting levels near the basis set limit). The largest source of error
+is undoubtedly due to inaccuracies in the potential, and the only way of estimating the resulting errors in rate
+
+0
+
+1
+
+^^
+
+II—4- I I -i.
+50 E (cm ')
+
+L
+
+J
+
+100
+
+ISO
+
+Fig. 4.—Cross sections for excitation of CO in its lowest, / = 0 rotational level by collisions with He as a function of energy for
+the three interaction potentials described in the text. The MAI results are thought to accurately reflect true values for this system.
+
+© American Astronomical Society • Provided by the NASA Astrophysics Data System
+
+197 6ApJ. . .205. .7 6 6G
+
+Yol. 205
+
+GREEN AND THADDEUS
+
+780
+
+TABLE 5
+MATRIX OF RATE COEFFICIENTS FOR CO-He*
+«y Jf 0
+
+80UK
+
+3
+
+6
+0.0000
+0.0000
+0.0000
+0.0000
+0.0000
+0*0003
+
+0.2679
+0.3094
+0.0275
+0.0456
+0.0069
+0.0133
+
+0.2656
+0.3635
+0.6001
+0.0531
+0.0828
+0.0264
+
+0.0558
+0.0662
+0.2618
+0.6338
+0.0824
+0.1296
+
+0.0003
+0.0055
+0.0132
+0.1476
+0.5928
+0.1417
+
+0.0000
+0.0000
+0.0005
+0.0023
+o!l508
+0.6928
+
+0.0000
+0.0000
+0.0000
+0.0000
+0.0007
+0.1920
+
+0.2822
+0.3032
+0.0343
+0.0450
+0.0085
+0.0143
+
+0.4866
+o!s824
+0.5438
+0.0619
+0.0922
+0.0292
+
+0.2879
+0.2106
+0.3266
+0.6051
+0.0989
+0.1369
+
+0.0087
+0.0797
+0.0869
+0Í2240
+0.6516
+0.1535
+
+0.0016
+0.0013
+0.0226
+0.0315
+ol2190
+0.7455
+
+0.0000
+0.0001
+0.0003
+0.0070
+0.0165
+0Í2431
+
+0.0000
+0.0000
+0.0000
+0.0001
+0.0024
+0.0104
+
+0.2596
+0.2854
+0.0379
+0.0454
+0.0107
+0.0146
+
+0.5905
+0.3666
+0.4915
+0.0719
+0.0963
+0.0315
+
+0.6217
+0.3513
+0Í3373
+0.5692
+0.1119
+0.1338
+
+0.0505
+0.2877
+0.2060
+0.2810
+0.6436
+0.1576
+
+0.0257
+0.0181
+0.1477
+0.1195
+0.2811
+0.7167
+
+0.0019
+0.0073
+0.0087
+0.0836
+0.0848
+0.2832
+
+0.0006
+0.0005
+0.0024
+0.0046
+0.0493
+0.0636
+
+0.2276
+0.2650
+0.0421
+0.0461
+0.0141
+0.0154
+
+0.5947
+0.3387
+0.4462
+0.0825
+0.0963
+0.0364
+
+0.8745
+0.4284
+0.3310
+0.5234
+0.1224
+0.1259
+
+0.1287
+0.5222
+0.3063
+0Í3088
+0.5897
+0.1565
+
+0.1036
+0.0723
+0.3579
+0.2285
+0Í3120
+0.6246
+
+0.0194
+0.0510
+0.0508
+0.2665
+0.1898
+0.2927
+
+0.0110
+0.0099
+0.0272
+0.0365
+0.1980
+0.1507
+
+0.2107
+0.2548
+0.0461
+0.0471
+0.0179
+0.0173
+
+0.5764
+0.3259
+0.4249
+0.0908
+0.0962
+0.0464
+
+0.9654
+0.4522
+0.Z2S9
+0.4085
+0.1339
+0.1273
+
+0.1854
+0.6263
+0.3498
+0.3200
+0.5552
+0.1721
+
+0.1664
+0.1203
+0.4710
+0.2847
+0.3303
+0.5865
+
+0.0487
+0.0972
+0.0971
+0.3807
+0.2542
+0.3185
+
+0.0322
+0.0319
+0.0634
+0.0802
+0.3105
+0.2161
+
+0.5594
+
+1.0136
+0.4643
+0^3303
+0.4917
+0.1471
+0.1314
+
+0.2287
+0.6872
+0.3767
+0.3282
+0.5373
+0.1991
+
+0.2164
+0.1592
+0.5462
+0.3202
+0.3527
+0.5678
+
+0.0828
+0.1351
+0.1411
+0.4539
+0.3055
+0.3624
+
+0.0580
+0.0653
+0.0993
+0.1310
+0.3884
+0.2824
+
+1.0476
+0.4723
+0^3335
+0.4971
+0.1605
+0.1364
+cm 3 s-
+
+0.2632
+0.7319
+0.3965
+0Í3348
+0.5293
+0.2311
+
+0.2614
+0.1904
+0.6085
+0.3450
+0.3777
+0.5575
+
+0.1177
+0.1659
+0.1819
+0.5067
+0.3510
+0.4155
+
+0.0849
+0.1077
+0.1321
+0.1871
+0.4444
+0.3520
+
+0.1999
+0.2497
+0.0497
+0.0489
+0.0215
+0.0192
+
+0.3196
+0.4156
+0.0977
+0.0968
+0.0600
+
+0.5451
+o!3162
+0.4131
+0.1033
+0.0979
+0.0750
+In units of 10 -10
+
+0.1922
+0.2476
+0.0527
+0.0515
+0.0249
+0.0210
+
+constants is by comparison with experiments that sample the anisotropic parts of the potential. For CO-He the only
+available data is for microwave pressure broadening, and MAI values agree with this experiment to about 10 percent.
+The computed rate constants are therefore tentatively estimated to be accurate to about 20 percent. Other experimental information, such as nuclear magnetic resonance spin-lattice relaxation of 13CO in He or low temperature
+sound absorption measurements could provide further tests of the anisotropic parts of the MAI potential.
+b) CO-H
+Cross sections were computed for CO-H using the interaction potential described in § III/. We have ignored the
+electron spin of the H atom; i.e., we have computed rotational excitation cross sections of CO summed over the
+
+© American Astronomical Society • Provided by the NASA Astrophysics Data System
+
+197 6ApJ. . .205. .7 6 6G
+
+781
+
+ROTATIONAL EXCITATION OF CO
+
+No. 3, 1976
+
+possible spin flip on H. For energies below 100 cm “1 the close-coupling basis set included at least two closed channels.
+Specifically, we have used a B6 basis below 38 cm "1 ; B7 below 57 cm “1 ; B8 below 81 cm _ 1 ; and B9 below 106 cm “1.
+A B8 basis was used to estimate cross sections at higher energies. Cross sections have been averaged over Boltzmann
+energy distributions, and the resulting rate constants are presented in Table 6. The largest source of error is again
+expected to be from inaccuracies in the interaction potential. It is somewhat difficult to assess the reliability of these
+TABLE 6
+MATRIX OF RATE COEFFICIENTS FOR CO-H*
+
+0
+1
+2
+3
+5°K 4
+5
+6
+7
+
+...
+0.8264
+0.4161
+0.0137
+0.0090
+0.0026
+0.0001
+0.0000
+
+1
+0.8194
+...
+1.5001
+0.4825
+0.0451
+0.0090
+0.0033
+0.0000
+
+2
+0.0751
+0.2731
+...
+1.2129
+1.6029
+0.0378
+0.0082
+0.0004
+
+3
+0.0001
+0.0044
+0.0613
+...
+1.8229
+1.2701
+0.0328
+0.0010
+
+4
+0.0000
+0.0000
+0.0012
+0.0280
+...
+1.0643
+1.0403
+0.0039
+
+5
+0.0000
+0.0000
+0.0000
+0.0001
+0.0051
+...
+0.7602
+0.1155
+
+6
+0.0000
+0.0000
+0.0000
+0.0000
+0.0000
+0.0012
+...
+0.0798
+
+7
+0.0000
+0.0000
+0.0000
+0.0000
+0.0000
+0.0000
+0.0000
+
+0
+1
+2
+3
+10°K 4
+5
+6
+7
+
+...
+0.6651
+0.3753
+0.0152
+0.0063
+0.0023
+0.0001
+0.0001
+
+1.1470
+...
+1.3040
+0.5270
+0.0324
+0.0075
+0.0036
+0.0001
+
+0.3565
+0.7182
+...
+1.3938
+1.1145
+0.0328
+0.0087
+0.0020
+
+0.0038
+0.0772
+0.3708
+...
+1.2324
+1.0659
+0.0360
+0.0045
+
+0.0002
+0.0007
+0.0417
+0.1731
+...
+0.9026
+1.1152
+0.0181
+
+0.0000
+0.0000
+0.0001
+0.0115
+0.0693
+...
+0.8201
+0.5264
+
+0.0000
+0.0000
+0.0000
+0.0000
+0.0037
+0.0350
+...
+0.3676
+
+0.0000
+0.0000
+0.0000
+0.0000
+0.0000
+0.0005
+0.0088
+...
+
+20°K
+
+0
+1
+2
+3
+4
+5
+6
+7
+
+...
+0.5601
+0.3607
+0.0145
+0.0047
+0.0021
+0.0001
+0.0001
+
+1.2740
+...
+1.0015
+0.5374
+0.0263
+0.0064
+0.0036
+0.0002
+
+0.7862
+0.9595
+...
+1.1553
+0.8615
+0.0301
+0.0082
+0.0035
+
+0.0193
+0.3142
+0.7051
+...
+0.9338
+0.9307
+0.0356
+0.0074
+
+0.0026
+0.0065
+0.2234
+0.3968
+...
+0.8104
+1.0572
+0.0304
+
+0.0004
+0.0005
+0.0024
+0.1211
+0.2482
+...
+0.7966
+0.8640
+
+0.0000
+0.0001
+0.0001
+0.0010
+0.0727
+0.1789
+...
+0.6299
+
+0.0000
+0.0000
+0.0000
+0.0000
+0.0003
+0.0323
+0.1047
+...
+
+40°K
+
+0
+1
+2
+3
+4
+5
+6
+7
+
+...
+0.5401
+0.3898
+0.0149
+0.0042
+0.0023
+0.0001
+0.0001
+
+1.4109
+...
+0.8243
+0.5721
+0.0256
+0.0062
+0.0038
+0.0002
+
+1.2866
+1.0416
+...
+0.9443
+0.7814
+0.0306
+0.0081
+0.0043
+
+0.0455
+0.6682
+0.8729
+...
+0.8406
+0.8863
+0.0357
+0.0088
+
+0.0094
+0.0221
+0.5339
+0.6213
+...
+0.8084
+1.0021
+0.0356
+
+0.0032
+0.0033
+0.0128
+0.4008
+0.4946
+...
+0.8097
+0.9800
+
+0.0001
+0.0010
+0.0017
+0.0083
+0.3159
+0.4171
+...
+0.7690
+
+0.0000
+0.0000
+0.0004
+0.0009
+0.0049
+0.2211
+0.3368
+...
+
+0
+1
+2
+3
+60°K 4
+5
+6
+7
+
+...
+0.5786
+0.4434
+0.0167
+0.0046
+0.0027
+0.0002
+0.0002
+
+1.5829
+...
+0.8173
+0.6350
+0.0282
+0.0071
+0.0045
+0.0003
+
+1.6813
+1.1327
+...
+0.9185
+0.8126
+0.0335
+0.0091
+0.0051
+
+0.0672
+0.9342
+0.9750
+...
+0.8696
+0.9225
+0.0384
+0.0103
+
+0.0165
+0.0369
+0.7669
+0.7731
+...
+0.8631
+1.0295
+0.0394
+
+0.0075
+0.0071
+0.0244
+0.6319
+0.6651
+...
+0.8703
+1.0484
+
+0.0004
+0.0031
+0.0045
+0.0179
+0.5390
+0.5913
+...
+0.8654
+
+0.0002
+0.0001
+0.0015
+0.0029
+0.0125
+0.4309
+0.5235
+
+80°K
+
+0
+1
+2
+3
+4
+5
+6
+7
+
+...
+0.6359
+0.5116
+0.0193
+0.0057
+0.0034
+0.0003
+0.0003
+
+1.7804
+...
+0.8634
+0.7197
+0.0325
+0.0089
+0.0056
+0.0004
+
+2.0792
+1.2532
+...
+0.9572
+0.8878
+0.0383
+0.0114
+0.0063
+
+0.0893
+1.1881
+1.0889
+...
+0.9376
+1.0021
+0.0434
+0.0129
+
+0.0258
+0.0524
+0.9845
+0.9140
+...
+0.9444
+1.1077
+0.0452
+
+0.0132
+0.0124
+0.0367
+0.8448
+0.8166
+...
+0.9567
+1.1453
+
+0.0008
+0.0061
+0.0085
+0.0286
+0.7474
+0.74ß5
+...
+0.9730
+
+0.0006
+0.0003
+0.0034
+0.0061
+0.0217
+0.6353
+0.6917
+...
+
+100°K
+
+0
+1
+2
+3
+4
+5
+6
+7
+
+...
+0.7037
+0.5917
+0.0227
+0.0075
+0.0043
+0.0004
+0.0004
+
+2.5069
+1.3957
+...
+1.0278
+0.9907
+0.0450
+0.0148
+0.0079
+cm 3 s-1 .
+
+0.1142
+1.4550
+1.2186
+...
+1.0266
+1.1108
+0.0505
+0.0166
+
+0.0388
+0.0701
+1.2103
+1.0577
+...
+1.0423
+1.2181
+0.0532
+
+0.0206
+0.0197
+0.0509
+1.0606
+0.9659
+...
+1.0584
+1.2661
+
+0.0016
+0.0102
+0.0142
+0.0409
+0.9570
+0.8973
+...
+1.0905
+
+0.0013
+0.0007
+0.0060
+0.0105
+0.0327
+0.8406
+0.8540
+
+*
+
+1.9976
+...
+0.9353
+0.8224
+0.0384
+0.0116
+0.0071
+0.0006
+In units of 10 -11
+
+© American Astronomical Society • Provided by the NASA Astrophysics Data System
+
+197 6ApJ. . .205. .7 6 6G
+
+Vol. 205
+
+GREEN AND THADDEUS
+
+782
+
+calculations due to the lack of experimental data for CO-H. However, the values in Table 6 are estimated to be
+within 30 percent of the true rate constants.
+c) CO-H2
+Close coupling calculations were performed assuming that H2 is a structureless spherical projectile and using the
+final potential described in § Illg. A B5 basis was used for all calculations. The resulting cross sections were averaged
+over Boltzmann energy distributions to obtain rate constants for rotational excitation; final values are presented
+in Table 7.
+As noted, these calculations are able to reproduce data for CO pressure broadening by H2 and D2. (For the latter
+we used the CO--H2 interaction potential but the collisional reduced mass appropriate for CO-D2.) This is of only
+limited significance in assessing the accuracy of these calculations, since the adjustable parameter may have been
+able to compensate here for errors introduced by assuming a structureless H2 projectile. Nevertheless, we believe
+that the rates in Table 7 are generally reliable to 30 percent.
+V. CONCLUDING REMARKS
+We have outlined above theoretical procedures which can be used to compute accurate cross sections for collision
+processes relevant to interstellar molecular clouds. These techniques have now been applied to a number of astrophysically important systems in addition to the carbon monoxide reported here: HCN (Green and Thaddeus 1974),
+TABLE 7
+MATRIX OF RATE COEFFICIENTS FOR CO V Jf
+0.0868
+0.2793
+0.0234
+0.0238
+0.0026
+0.1757
+0.2764
+0.0439
+0.0262
+0.0040
+
+10 K
+
+0.2793
+0.2969
+0.0540
+0.0323
+0.0062
+
+40 K
+
+0.3449
+0.3334
+0.0557
+0.0400
+0.0100
+
+60 K
+
+0.3629
+0.3610
+0.0583
+0.0465
+0.0156
+
+80 K
+
+0.3694
+0.3825
+0.0622
+0.0522
+0.0233
+0.3725
+0.4007
+0.0666
+0.0573
+0.0321
+*
+
+0.0861
+o! 1.748
+0.4327
+0.0331
+0.0553
+0.3030
+0.3508
+0.4796
+0.0541
+0.0579
+0.6353
+0.4845
+0.5161
+0.0780
+0.0668
+0.9009
+0.5370
+0.5602
+0.0932
+0.0840
+0.9924
+O^SSll
+0.5949
+0.1067
+0.1009
+1.0339
+0.5611
+0.6267
+0.1244
+0.1184
+1.0572
+o!s708
+0.6586
+0.1447
+0.1355
+
+In units of 10"10 cm3 s
+
+0.0504
+0.0318
+0.1945
+0.6761
+0.0409
+0.2626
+0.1932
+0.3699
+0.6041
+0.0545
+0.6471
+0.4643
+0 ! 5261
+0.6098
+0.0802
+1.1007
+0.6786
+0.5925
+0.6571
+0.1216
+1.3687
+0.7637
+0 ! 5999
+0.6905
+0.1646
+1.5540
+0.8144
+oieois
+0.7172
+0.2134
+1.6973
+0.8517
+0 ! 6046
+0.7414
+0.2653
+
+0.0002
+0.0040
+0.0098
+0.3230
+0.6845
+0.0111
+0.0703
+0.0984
+0 ! 3724
+0.6818
+0.0719
+0.3018
+0.3211
+0.4756
+0.7189
+0.1700
+0.6544
+0.5476
+0 ! 5740
+0.7797
+0.2346
+0.8752
+0.6367
+0.6318
+0.8211
+0.2876
+1.0347
+0.6842
+0.6844
+0.8571
+0.3343
+1.1652
+0.7168
+0.7366
+0.8902
+
+0.0000
+0.0000
+0.0005
+0.0050
+0.1983
+0.0009
+0.0011
+0.0226
+0.0523
+0.2601
+0.0183
+0.0194
+0.1581
+0.2021
+0.3749
+0.0904
+0.0805
+0.4490
+0.4243
+0.5249
+0.1663
+0.1396
+0.6516
+0.5617
+0.6356
+0.2355
+0.2003
+0.7954
+0.6673
+0.7374
+0.2968
+0.2641
+0.9058
+0.7590
+0.8344
+
+0.0000
+0.0000
+0.0000
+0.0001
+0.0010
+0.0000
+0.0001
+0.0002
+0.0074
+0.0200
+0.0011
+0.0051
+0.0064
+0.0936
+0.1148
+0.0139
+0.0444
+0.0509
+0.3529
+0.3211
+0.0431
+0.1016
+0.1197
+0.5629
+0.4897
+0.0906
+0.1646
+0.2047
+0.7231
+0.6376
+0.1539
+0.2285
+0.3003
+0.8503
+0.7731
+
+1
+
+© American Astronomical Society • Provided by the NASA Astrophysics Data System
+
+197 6ApJ. . .205. .7 6 6G
+
+ROTATIONAL EXCITATION OF CO
+
+No. 3, 1976
+
+783
+
+HD (Green 19746), N2H+ (Green 19756), HC1 (Green and Monchick 1975), and H2CO (Garrison et al 1975). For
+CO, HCN, HD, and HC1 it has been possible to compare theoretical results with experimental data, mostly spectral
+pressure broadening measurements, and in all cases the agreement has been very good. It would, of course, be
+extremely desirable to have additional experimental data.
+At the low temperatures in interstellar molecular clouds, only a small number of rotational levels are populated,
+and this has allowed us to treat collision dynamics via essentially exact (i.e., converged close coupling) quantum
+calculations. At higher temperatures or for systems with more closely spaced rotational levels, such calculations
+become prohibitively expensive. Thus it is necessary to find cheaper, approximate scattering methods which are
+nonetheless sufficiently accurate. Of course, “exact” quantum results are invaluable for assessing such methods,
+and the CO-He calculations presented here have been used to test classical trajectory methods (Augustin and
+Miller 1974), “dimensionality reducing” quantum approximations (Green 1975c), and the central field approximation (Monchick and Green 1975). It now appears that such methods will provide an adequate framework for
+obtaining accurate theoretical collision cross sections for most of the systems of current astrophysical interest.
+Several of the techniques used in these studies were developed by R. G. Gordon and co-workers; we are grateful
+to Professor Gordon for many useful discussions. We would also like to thank R. G. Gordon, W. A. Lester, U.
+Wahlgren, and P. S. Bagus for making available computer codes used in various aspects of these calculations. One
+of us (S. G.) would like to thank H. van Regemorter for hospitality at l’Observatoire de Meudon where the final
+portions of this manuscript were completed.
+APPENDIX
+Although not mathematically rigorous, the adequacy of using a finite subspace of an infinite complete basis set
+is often checked by considering the “convergence” of final results as the subspace is increased. Such basis set
+TABLE A1
+DEPENDENCE ON BASIS SET SIZE OF COMPUTED CROSS SECTIONS*
+if
+
+B4
+
+89
+
+B5
+5.69
+5.59
+4.57
+6.57
+7.56
+
+B6
+5.32
+5.50
+5.06
+4.17
+5.74
+6.59
+
+12.26
+10.49
+7.44
+8.03
+
+11.29
+9.17
+8.33
+6.63
+6.36
+
+4.57
+3.55
+4.43
+
+4.30
+2.81
+2.66
+3.21
+
+3.87
+3.56
+
+4.26
+2.65
+2.03
+
+2.96
+
+1.51
+1.40
+1.16
+
+B7
+5.39
+5.27
+4.96
+4.69
+3.95
+4.89
+5.62
+11.56
+8.52
+7.89
+7.58
+6.11
+5.42
+3.88
+3.18
+2.36
+2.09
+2.33
+4.00
+3.00
+1.84
+1.24
+1.56
+0.88
+0.76
+1.05
+0.46
+0.41
+
+line
+0-1
+1-2
+0-2
+1-3
+
+27.37
+27.90
+27.70
+27.76
+25.12
+25.75
+25.35
+23.77
+28.04
+27.00
+27.91
+27.36
+25.28
+25.71
+26.03
+24.71
+* Cross sections for rotational excitation and pressure
+°2
+-1
+broadening (in A ) computed at a total energy of 130 cm
+
+© American Astronomical Society • Provided by the NASA Astrophysics Data System
+
+197 6ApJ. . .205. .7 6 6G
+
+VoL 205
+
+GREEN AND THADDEUS
+
+784
+
+TABLE A2
+DEPENDENCE ON BASIS SIZE OF THE J=13 PARTIAL CROSS SECTION*
+B5
+115
+215
+168
+251
+408
+
+B6
+.110
+.209
+.185
+.152
+.279
+.417
+
+310
+479
+452
+510
+
+.299
+.479
+.477
+.472
+.616
+
+039
+059
+125
+
+.041
+.053
+.069
+.146
+
+042
+081
+
+.042
+.072
+.107
+
+010
+
+.005
+.019
+.009
+
+7 0
+timet
+
+B7
+.112
+.202
+.182
+.173
+.187
+.300
+.530
+.303
+.461
+.473
+.505
+.589
+1.043
+.039
+.058
+.063
+.086
+.241
+.042
+.076
+.098
+.182
+.005
+.010
+.035
+.009
+.023
+.004
+66.7
+
+B8
+.112
+.207
+.177
+.160
+.220
+.267
+.233
+.304
+.466
+.448
+.479
+.738
+1.185
+.039
+.052
+.066
+.105
+.156
+.039
+.070
+.122
+.207
+.005
+.016
+.022
+.012
+.028
+.002
+115.0
+
+B9
+.111
+.205
+.177
+.159
+.212
+.265
+.247
+.306
+.469
+.451
+.468
+.739
+1.336
+.039
+.052
+.062
+.101
+.172
+.039
+.067
+.121
+.232
+.005
+.015
+.027
+.012
+.033
+.003
+238.0
+
+BIO
+.112
+.206
+.177
+.159
+.217
+.258
+.231
+.304
+.467
+.446
+.463
+.742
+1.343
+.039
+.052
+.064
+.100
+.163
+.039
+.067
+.121
+.234
+.005
+.015
+.025
+.012
+.034
+.003
+376.0
+
+35.8
+Cross sections in A° 2 computed at a total energy of 130.0 cm -1 .
+Computation time in seconds on an IBM 360/95.
+17.7
+
+“tests” were done for the three CO-He interaction potentials considered in this study and for a range of energies.
+Only one set of results is presented here, those for the MAI potential at 130.0 cm“1; however, these are quite
+typical of the others. At 130.0 cm“1, y = 0 through 7 = 7 are open channels, and we considered basis sets with
+7max = 4 (B4) to 7max = 10 (B10). For bases B4 to B7, calculations were done at total angular momenta / = 0
+through J — 35, and cross sections for rotational excitation and pressure broadening were obtained via equations
+(2.8) and (2.9); results are presented in Table Al. For reasons of economy, only the 7=13 partial cross sections
+were computed for larger basis sets ; these results are given in Table A2.
+Because the potential used here is significantly more anisotropic than those used in previous studies, we find
+somewhat poorer convergence than has been reported by other workers (Lester and Bernstein 1967; Sams and
+Kouri 1970; Bastes and Secrest 1972). On the other hand, the results presented here are some of the strongest
+evidence to date that basis set truncation is, indeed, not a serious source of error in calculations of this sort. We
+have used considerably larger basis sets than most previous workers, and the constancy of cross sections among the
+lower levels—o-10, <r21, ct20, etc.—as the basis is increased from B4 to B10 is a good indication that these values
+actually are at the infinite basis limit. The criterion of including all open channels would seem from these calculations to be less important than previously assumed. It does, however, appear desirable to include channels which
+are directly coupled by the significant anisotropies in the potential (cf. eq. [3.1]) to the highest rotor level for which
+cross sections are needed.
+REFERENCES
+Alexander, M. H., and Berard, E. V. 1974,7. Chem. Phys., 60,
+Bernstein, R. B., and Muckerman, J. T. 1967, Adv. Chem.
+3950.
+Phys., 12, 389.
+Allison, A. C. 1970, J. Comput. Phys., 6, 378.
+Birnbaum, G. 1967, Adv. Chem. Phys., 12, 487.
+Amdur, I., and Jordan, J. E. 1966, Adv. Chem. Phys., 10, 29.
+Buckingham, A. D. 1967, Adv. Chem. Phys., 12, 107.
+Arthurs, A. M., and Dalgarno, A. 1960, Proc. Roy. Soc.
+Burke, P. G., Scrutton, D., Tait, J. H., and Taylor, A. J.
+London, A256, 540.
+1969, J. Phys. B, 2, 1155.
+Augustin, S. D., and Miller, W. H. 1974, Chem. Phys. Letters,
+Campaan, A., Langer, W. D., Eden, D., and Swinney, H.
+28,149.
+1973, Ap. J. {Letters), 185, L105.
+
+© American Astronomical Society • Provided by the NASA Astrophysics Data System
+
+197 6ApJ. . .205. .7 6 6G
+
+No. 3, 1976
+
+ROTATIONAL EXCITATION OF CO
+
+Chu, S.-L, and Dalgarno, A. 1975, Proc. Roy. Soc. London,
+A342,191.
+Clementi, E., Kistenmacher, H., and Popie, H. 1973, J. Chem.
+Phys., 58, 4699.
+Cohen, J. S., and Pack, R. T. 1974, /. Chem. Phys., 61, 2372.
+Csizmadia, I. G., Harrison, M. C., Moskowitz, J. W., and
+Sutcliffe, B. T. 1966, Theoret. Chim. Acta, 6, 191.
+Bastes, W., and Secrest, D. 1972, J. Chem. Phys., 56, 640.
+Edmonds, A. R. 1960, Angular Momentum in Quantum
+Mechanics (Princeton: Princeton University Press).
+Garrison, B. J., Lester, W. A., Miller, W. H., and Green, S.
+1975, Ap. J. {Letters), 200, L175.
+Gordon, R. G. 1966, J. Chem. Phys., 44, 3083.
+. 1969, ibid., 51, 14.
+. 1971, Methods Comput. Phys., 10, 81.
+Gordon, R. G., and Kim, Y. S. 1972, /. Chem. Phys., 56, 3122.
+Gordon, R. G., Klemperer, W., and Steinfeld, J. I. 1968,
+Ann. Rev. Phys. Chem., 19, 215.
+Gordon, R. G., and McGinnis, R. P. 1971, J. Chem. Phys., 55,
+4898.
+Green, S. 1974a, J. Chem. Phys., 60, 2654.
+. 19746, Physica, 76, 609.
+. 1975a, /. Chem. Phys., 62, 3568.
+. 19756, Ap. J., 201, 366.
+. 1975c, Chem. Phys. Letters, in press.
+Green, S., Bagus, P. S., Liu, B., McLean, A. D., and Yoshimine, M. 1972, Phys. Rev. A, 5, 1614.
+Green, S., Garrison, B. J., and Lester, W. A. 1975, J. Chem.
+Phys., 63, 1154.
+Green, S., and Monchick, L. 1975, J. Chem. Phys., 63, 4198.
+Green, S., and Thaddeus, P. 1974, Ap. J., 191, 653.
+Harris, S. J., Novick, S. E., Klemperer, W., and Falconer,
+W. E. 1974, J. Chem. Phys., 61, 193.
+Hinze, J. 1974, Adv. Chem. Phys., 26, 213.
+Hirschfelder, J. O., Curtiss, C. F., and Bird, R. B. 1954,
+Molecular Theory of Gases and Liquids (New York: Wiley).
+Jacob, M., and Wick, G. C. 1959, Ann. Phys., 1, 404.
+Johnson, B. R., and Secrest, D. 1966, /. Math. Phys., 1, 2187.
+
+785
+
+Kim, Y. S. 1973, unpublished thesis, Harvard University.
+Kim, Y. S., and Gordon, R. G. 1974, J. Chem. Phys., 61, 1.
+Kinsey, J. L., Riehl, J. W., Waugh, J. S., and Rugheimer,
+J. H. 1968, J. Chem. Phys., 49, 5276.
+Kistenmacher, P. G., Tom, A., and DeVries, A. E. 1970,
+Physica, 48, 414.
+Kopal, Z. 1955, Numerical Analysis (London: Chapman and
+Hall).
+Kuppermann, A., Gordon, R. J., and Coggiola, M. J. 1973,
+Disc. Faraday Soc., 55, 145.
+Lester, W. A. 1971, Methods Comput. Phys., 10, 211.
+Lester, W. A., and Bernstein, R. B. 1967, Chem. Phys. Letters,
+1,207.
+Lester, W. A., and Schaefer, J. 1973, J. Chem. Phys., 59, 3676.
+Light, J. 1971, Methods Comput. Phys., 10, 111.
+Margenau, H., and Kestner, N. R. 1971, Theory of Intermolecular Forces (Oxford : Pergamon).
+Miller, W. H. 1971, Chem. Phys. Letters, 11, 535.
+Monchick, L., Brown, N. J., and Munn, R. J. 1973, Mol.
+Phys., 25, 249.
+Monchick, L., and Green, S. 1975, /. Chem. Phys., 63, 2000.
+Neilsen, W. B., and Gordon, R. G. 1973, J. Chem. Phys., 58,
+4131,4149.
+Nerf, R. B., and Sonnenberg, M. A. 1975, J. Mol. Spectrosc.,
+58,474.
+Oka, T. 1973, Adv. Atomic and Mol. Phys., 9, 127.
+O’Neil, S. V., Pearson, P. K., Schaefer, H. F., and Bender,
+C. F. 1973, J. Chem. Phys., 58, 1126.
+Rae, A. I. M. 1973, Chem. Phys. Letters, 18, 574.
+Reuss, J., and Stolte, S. 1969, Physica, 42, 111.
+Saha, S., Guha, E., and Barua, A. K. 1973, J. Phys. B, 6,1824.
+Sams, W. N., and Kouri, D. J. 1969, J. Chem. Phys., 51, 4815.
+. 1970, ibid., 53, 496.
+Schaefer, H. F. 1972, The Electronic Structure of Atoms and
+Molecules: A Survey of Rigorous Quantum Mechanical
+Results (Reading, Mass. : Addison-Wesley).
+Shafer, R., and Gordon, R. G. 1973, J. Chem. Phys., 58, 5422.
+Wagner, A. F., and McKoy, V. 1973, J. Chem. Phys., 58, 2604.
+
+Sheldon Green and Patrick Thaddeus: Goddard Institute for Space Studies, 2880 Broadway, New York, NY
+10025
+
+© American Astronomical Society • Provided by the NASA Astrophysics Data System
+
+
